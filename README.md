@@ -28,7 +28,7 @@
 
 | # | Module | Status | Portfolio pin? |
 |---|---|---|---|
-| 01 | [local-runtime](modules/01-local-runtime) | in progress | — |
+| 01 | [local-runtime](modules/01-local-runtime) | **done** (smoke PASS) | — |
 | 02 | [agent-harness](modules/02-agent-harness) | planned | **PIN #1** |
 | 03 | [mcp-skills](modules/03-mcp-skills) | planned | spotlight optional |
 | 04 | [evals](modules/04-evals) | planned | **PIN #2** |

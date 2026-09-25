@@ -46,6 +46,22 @@ MODEL=qwen2.5-coder:14b ./modules/01-local-runtime/scripts/smoke.sh
 
 Numbers are approximate; verify with Activity Monitor while a prompt is running.
 
+## Verified on this machine
+
+| Check | Result |
+|---|---|
+| Install | Homebrew formula `ollama` 0.34.4 |
+| Service | `brew services start ollama` → `127.0.0.1:11434` |
+| Model | `llama3.1:8b` (~4.9 GB pull) |
+| Smoke | **PASS** — prompt `"Reply with exactly: ok"` → `ok` |
+| Wall time | ~**1.6 s** for the smoke prompt (warm path; first load after boot will be slower) |
+
+Command used:
+
+```bash
+./modules/01-local-runtime/scripts/smoke.sh
+```
+
 ## Design decisions
 
 1. **Ollama over raw MLX first** — fewer moving parts for a portfolio quickstart; MLX can be a later ADR.
@@ -54,4 +70,4 @@ Numbers are approximate; verify with Activity Monitor while a prompt is running.
 
 ## Status
 
-In progress — smoke script shipped; expand with latency notes after first local runs.
+**Done for Theme 01 DoD core** — install path + smoke + model table verified on M4. Optional follow-up: add `qwen2.5-coder:14b` smoke row when pulled.

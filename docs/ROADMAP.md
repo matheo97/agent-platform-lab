@@ -13,9 +13,9 @@ Pace: **~7 h/week**. Each theme closes in **2–4 weeks** with a public GitHub a
 
 ## Themes
 
-### 01 — Local AI runtime (2 weeks) — in progress
+### 01 — Local AI runtime (2 weeks) — **done** (core DoD)
 
-- Ollama on M4, 1–2 stable models, smoke script, RAM guidance
+- Ollama on M4 via Homebrew, `llama3.1:8b`, smoke script PASS (~1.6 s warm)
 - **Artifact:** `modules/01-local-runtime`
 
 ### 02 — Agent harness (3–4 weeks) — PIN #1
