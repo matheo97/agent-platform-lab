@@ -29,7 +29,7 @@
 | # | Module | Status | Portfolio pin? |
 |---|---|---|---|
 | 01 | [local-runtime](modules/01-local-runtime) | **done** (smoke PASS) | — |
-| 02 | [agent-harness](modules/02-agent-harness) | planned | **PIN #1** |
+| 02 | [agent-harness](modules/02-agent-harness) | **done** (demo PASS) | **PIN #1** |
 | 03 | [mcp-skills](modules/03-mcp-skills) | planned | spotlight optional |
 | 04 | [evals](modules/04-evals) | planned | **PIN #2** |
 | 05 | [sandbox](modules/05-sandbox) | planned | — |
@@ -58,17 +58,19 @@ Roadmap + Definition of Done per theme: [`docs/ROADMAP.md`](docs/ROADMAP.md)
 git clone https://github.com/matheo97/agent-platform-lab.git
 cd agent-platform-lab
 
-# Theme 01 — local runtime smoke (requires Ollama)
+# Theme 01 — local runtime
 ./modules/01-local-runtime/scripts/smoke.sh
+
+# Theme 02 — agent harness (PIN #1)
+cd modules/02-agent-harness && ./run.sh --demo
 ```
 
 If Ollama is not installed yet:
 
 ```bash
 brew install ollama
-ollama serve   # if not already running as an app
+brew services start ollama
 ollama pull llama3.1:8b
-./modules/01-local-runtime/scripts/smoke.sh
 ```
 
 ---

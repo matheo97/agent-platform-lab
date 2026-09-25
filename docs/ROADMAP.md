@@ -18,10 +18,11 @@ Pace: **~7 h/week**. Each theme closes in **2–4 weeks** with a public GitHub a
 - Ollama on M4 via Homebrew, `llama3.1:8b`, smoke script PASS (~1.6 s warm)
 - **Artifact:** `modules/01-local-runtime`
 
-### 02 — Agent harness (3–4 weeks) — PIN #1
+### 02 — Agent harness (3–4 weeks) — **done** · PIN #1
 
-- Agent loop, typed tools, timeouts, JSONL transcripts, minimal tracing
-- **Artifact:** `modules/02-agent-harness` (+ optional spotlight repo later)
+- Agent loop, typed tools (fs/http/shell allowlist), JSONL transcripts, spans
+- Demo: write → read → HTTP 200 → `ls` → summary (`./run.sh --demo`)
+- **Artifact:** `modules/02-agent-harness` + `demos/02-agent-harness-sample-run.md`
 
 ### 03 — MCP + Skills + Commands + Hooks (2–3 weeks)
 
